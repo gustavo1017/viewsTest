@@ -8,5 +8,6 @@
 
 	<h1>Saludos para {{ $nombre }}</h1>
 	{!! $html !!}
+	{!!$script!!} 
 </body>
 </html>
