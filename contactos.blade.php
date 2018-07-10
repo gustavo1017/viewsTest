@@ -7,22 +7,24 @@
 
 	<label for="nombre">
 		Nombre
-		<input type="text" name="nombre">
+		<input type="text" name="nombre" value="{{old('nombre')}}">
+		{!!$errors->first('nombre','<span class="error">:message</span>')!!}
 
 	</label>
 	<label for="email">
 		Email
-		<input type="email" name="email">
-
+		<input type="text" name="email" value="{{old('email')}}">
+        {!!$errors->first('email','<span class="error">:message</span>')!!}
 	</label>
 	<label for="mensaje">
 		Mensaje
-		<textarea name="mensaje" ></textarea>
+		<textarea name="mensaje"  >{{old('mensaje')}}</textarea>
+		{!!$errors->first('mensaje','<span class="error">:message</span>')!!}	
+
 	</label>
 
-	<input type="submit" name="Enviar">
+	<input type="submit" value="Enviar">
 	
-
 </form>
 
 
