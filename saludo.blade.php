@@ -9,9 +9,12 @@
 	<h1>Saludos para {{ $nombre }}</h1>
 	
 	<ul>
-		@foreach($consolas as $consola)
+		@forelse($consolas as $consola)
 		<li>{{ $consola }}</li>
-		@endforeach
+		@empty
+		 	<p>No hay consolas :(</p>
+
+		@endforelse
 	</ul>
 
 
