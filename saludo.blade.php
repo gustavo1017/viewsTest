@@ -7,7 +7,13 @@
                        <!--para pasar la variable nombre al navegador -->
 
 	<h1>Saludos para {{ $nombre }}</h1>
-	{!! $html !!}
-	{!!$script!!} 
+	
+	<ul>
+		@foreach($consolas as $consola)
+		<li>{{ $consola }}</li>
+		@endforeach
+	</ul>
+
+
 </body>
 </html>
