@@ -15,6 +15,13 @@
 		 	<p>No hay consolas :(</p>
 
 		@endforelse
+
+
+		@if (count($consolas)===1)
+		<p>Solo tienes una consola</p>
+		@elseif(count($consolas)>1)
+		<p>Tienes varias</p>
+		@endif
 	</ul>
 
 
